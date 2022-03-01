@@ -15,7 +15,11 @@ export const ordersMain = () => {
 
     let html = "<ul>"
 
-    const listItems = orders.map(buildOrderListItem)
+    const listItems = orders.map(order => {
+        return `<li>
+        <input type="radio" name="orders" value="${order.id}" ${order.style}/>
+        </li>`
+    })
 
     html += listItems.join(" ")
     html += "</ul>"
