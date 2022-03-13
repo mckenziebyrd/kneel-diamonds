@@ -4,6 +4,8 @@ import { JewelryStyles } from "./JewelryStyles.js"
 import {ordersMain } from "./Orders.js"
 import { Metals } from "./Metals.js"
 
+
+
 document.addEventListener(
     "click",
     (event) => {

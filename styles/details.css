@@ -3,9 +3,9 @@
 .options {
     flex-basis: 24%;
     margin: 0 2rem;
-    border: 1px dashed dodgerblue;
+    border: 1px dashed rgb(187, 0, 0);
     padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(165, 117, 117);
 }
 

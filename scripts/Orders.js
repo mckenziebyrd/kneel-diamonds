@@ -1,4 +1,4 @@
-import { getOrders } from "./database.js"
+import { getMetals, getOrders, getSizes } from "./database.js"
 
 const buildOrderListItem = (order) => {
     return `<li>
@@ -12,14 +12,11 @@ export const ordersMain = () => {
         the component function for Orders, but not the others?
     */
     const orders = getOrders()
+    
 
     let html = "<ul>"
 
-    const listItems = orders.map(order => {
-        return `<li>
-        <input type="radio" name="orders" value="${order.id}" ${order.style}/>
-        </li>`
-    })
+    const listItems = orders.map(buildOrderListItem)
 
     html += listItems.join(" ")
     html += "</ul>"
