@@ -5,7 +5,7 @@ import { getStyles, setStyle } from "./database.js"
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.name === "style"){
+        if (event.target.name === "styles"){
             setStyle(parseInt(event.target.value))
         }
     }
