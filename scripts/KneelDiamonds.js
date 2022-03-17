@@ -16,6 +16,7 @@ document.addEventListener(
     }
 )
 
+
 export const KneelDiamonds = () => {
     return `
         <h1>Kneel Diamonds</h1>
